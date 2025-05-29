@@ -1,7 +1,7 @@
 version: 0.0.1
 type: plugin
 author: perfxlab
-name: ocr tool
+name: ocr_tool
 label:
   en_US: OCR recognition service
   zh_Hans: OCR识别服务

@@ -53,11 +53,10 @@ class OCRToMarkdownTool(Tool):
             yield self.create_text_message("请上传文件")
             return
 
-        # 解析文件 URL
-        parsed_url = urlparse(uploaded_file.url)
-        base_host = f"{parsed_url.scheme}://{parsed_url.hostname}"
-        # 拼接新的 service_url
-        service_url = f"{base_host}:8001/marker/upload"
+        service_url = tool_parameters.get('service_url')
+        if not service_url:
+            yield self.create_text_message("请设置正确OCR请求路径")
+            return
         
         logger.info("OCR Service URL: %s", service_url)
 
