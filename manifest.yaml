@@ -1,7 +1,7 @@
-version: 0.0.4
+version: 0.0.1
 type: plugin
-author: su
-name: perfxlab
+author: perfxlab
+name: ocr tool
 label:
   en_US: OCR recognition service
   zh_Hans: OCR识别服务
@@ -27,7 +27,7 @@ plugins:
   tools:
     - provider/perfxlab.yaml
 meta:
-  version: 0.0.2
+  version: 0.0.1
   arch:
     - amd64
     - arm64
