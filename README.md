@@ -5,8 +5,27 @@
 
 ## 使用
 
-### 1. 启动OCR服务
+### 1. 支持OCR服务HTTP
+目前支持部分http请求接口，后续会对更多OCR服务接口进行适配
 
-### 2. 安装此插件
+现已支持接口：
+| Request Method | Request Body |
+| ----------- | ----------- |
+| POST        | file * (required) string($binary)  |
+|             | force_ocr (option) boolean         |
+|             | paginate_output (option) boolean   |
+|             | output_format (option) string      |
+
+
+### 2. 安装Dify OCR服务插件
+
+插件->安装插件->GitHub
+![alt text](doc/img/install.png)
+填写git仓库地址：https://github.com/Yyyerk/difyplugin-ocr-service
+
+
+选择相应版本
+
 
 ### 3. 工作流调用
+![alt text](doc/img/workflow.png)
