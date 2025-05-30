@@ -25,7 +25,7 @@
 
 
 选择相应版本
-
+![alt text](doc/img/install_select.png)
 
 ### 3. 工作流调用
 ![alt text](doc/img/workflow.png)
